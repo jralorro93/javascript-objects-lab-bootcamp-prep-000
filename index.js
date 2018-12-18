@@ -3,6 +3,6 @@ var playlist = { 'Adele': "Hello"};
 
 function updateObjectWithKeyAndValue(object, key, value) {
   
-  return Object.assign ({}, playlist, {key: value});
+  return Object.assign ({}, object, {[key]: value});
 }
 
