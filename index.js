@@ -1,5 +1,4 @@
 var recipes = new Object({});
-var playlist = { 'Adele': "Hello"}; 
 
 function updateObjectWithKeyAndValue(object, key, value) {
   
@@ -12,5 +11,7 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 }
 
 function deleteFromObjectByKey(object, key) {
-  
+  var newObj = Object.assign({}, obj)
+  delete newObj.key;
+  return newObj
 }
