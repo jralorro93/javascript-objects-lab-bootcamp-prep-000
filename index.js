@@ -6,4 +6,3 @@ function updateObjectWithKeyAndValue(object, key, value) {
   return Object.assign ({}, playlist, {key: value});
 }
 
-Ob
